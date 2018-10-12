@@ -1,0 +1,26 @@
+[ {
+  "isIngress" : true,
+  "dataPagamento" : "23 de cada mês",
+  "quantia" : 300,
+  "titulo" : "Bonificação"
+}, {
+  "isIngress" : true,
+  "dataPagamento" : "1 e 15 de cada mês",
+  "quantia" : 1000,
+  "titulo" : "Salário"
+}, {
+  "isIngress" : true,
+  "dataPagamento" : "30 de cada mês",
+  "quantia" : 200,
+  "titulo" : "Trabalho extra"
+}, {
+  "isIngress" : false,
+  "dataPagamento" : "30 de cada mês",
+  "quantia" : 500,
+  "titulo" : "Renda"
+}, {
+  "isIngress" : false,
+  "dataPagamento" : "12 de cada mês",
+  "quantia" : 100,
+  "titulo" : "Serviços"
+} ]
