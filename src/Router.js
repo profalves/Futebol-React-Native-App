@@ -11,9 +11,9 @@ const RouterComponent = () => {
         <Router>
             <Stack key="root">
             <Scene
-                key="Inicio"
-                component={Inicio}
-                title="Início"
+                key="Login"
+                component={Login}
+                title="Login"
                 initial
             />
             <Scene

@@ -5,29 +5,29 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 class BarraInferior extends Component {
     render() {
-    return (
-        <View style={styles.container}>
-            <TouchableOpacity style={styles.item} onPress={() => Actions.Inicio()}>
-                <Icon name={this.props.primeiro} size={40} color='#000'/>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.item} onPress={() => Actions.Frequentes()}>
-                <Icon name={this.props.segundo} size={40} color='#000'/>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.item} onPress={() => Actions.Acoes()}>
-                <Icon name={this.props.terceiro} size={40} color='#000'/>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.item} onPress={() => Actions.Login()}>
-                <Icon name={this.props.quarto} size={40} color='#000'/>
-            </TouchableOpacity>
-        </View>
-    );
-}
+      return (
+          <View style={styles.container}>
+              <TouchableOpacity style={styles.item} onPress={() => Actions.Inicio()}>
+                  <Icon name={this.props.primeiro} size={40} color='#fff'/>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.item} onPress={() => Actions.Frequentes()}>
+                  <Icon name={this.props.segundo} size={40} color='#fff'/>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.item} onPress={() => Actions.Acoes()}>
+                  <Icon name={this.props.terceiro} size={40} color='#fff'/>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.item} onPress={() => Actions.Login()}>
+                  <Icon name={this.props.quarto} size={40} color='#fff'/>
+              </TouchableOpacity>
+          </View>
+      );
+  }
 }
 
 const styles = StyleSheet.create({
     container: {
         height: 70,
-        backgroundColor: '#e1e1e1',
+        backgroundColor: '#000',
         flexDirection: 'row',
     },
     item: {

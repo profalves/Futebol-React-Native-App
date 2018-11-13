@@ -14,18 +14,18 @@ class Acoes extends Component {
             });
     }
     showActions() {
-        return this.state.actions.map(action => 
+        return this.state.actions.map(action =>
             <ItemListaAcao
                 key={action.volume}
-                nome={action.name} 
-                cambio={action.percentChange} 
-                aumento={action.percentChange > 0} 
+                nome={action.name}
+                cambio={action.percentChange}
+                aumento={action.percentChange > 0}
             />
         );
     }
     render() {
         return (
-            <View >
+            <View style={{flex: 1}}>
                 <Card addStyle={styles.cardStyles}>
                     <View style={styles.headerStyle}>
                         <Text style={styles.headerNameStyle}>Nome</Text>
@@ -33,14 +33,16 @@ class Acoes extends Component {
                         <Text style={styles.headerItemStyle}>Tipo</Text>
                     </View>
                     {this.showActions()}
-                    
+
                 </Card>
-                <BarraInferior
-                    primeiro="home" 
-                    segundo="refresh" 
-                    terceiro="list" 
-                    quarto="user" 
-                />
+                <View style={{position: 'absolute', left: 0, right: 0, bottom: 0}}>
+                  <BarraInferior
+                      primeiro="home"
+                      segundo="refresh"
+                      terceiro="list"
+                      quarto="user"
+                 />
+                </View>
             </View>
         );
     }

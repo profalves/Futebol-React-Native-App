@@ -39,7 +39,7 @@ class Frequentes extends Component {
     render() {
         console.log(this.props);
         return (
-            <View>
+            <View style={{flex: 1}}>
                 <View>
                 <ScrollView style={styles.mainContainer}>
                     <TituloMovimento texto="Recebíveis" isIngress />
@@ -53,15 +53,17 @@ class Frequentes extends Component {
                         dataSource={this.dataSource}
                         renderRow={this.mostrarEgreso}
                     />
-                                       
-                    </ScrollView>
-                    </View>
-                <BarraInferior 
-                    primeiro="home" 
-                    segundo="refresh" 
-                    terceiro="list" 
-                    quarto="user" 
-                />
+
+                </ScrollView>
+                </View>
+                <View style={{position: 'absolute', left: 0, right: 0, bottom: 0}}>
+                  <BarraInferior
+                      primeiro="home"
+                      segundo="refresh"
+                      terceiro="list"
+                      quarto="user"
+                 />
+                </View>
             </View>
         );
     }

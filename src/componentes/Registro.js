@@ -14,10 +14,10 @@ class Registro extends Component {
                 .catch(this.registroErro.bind(this));
         } else this.setState({ error: 'As senhas não coincidem', loading: false });
     }
-    registroSucesso() {
+    registroErro() {
         this.setState({ error: 'Ocorreu um erro ao efetura o registro', loading: false });
     }
-    registroErro() {
+    registroSucesso() {
         this.setState({ loading: false });
         console.log('registered');
     }

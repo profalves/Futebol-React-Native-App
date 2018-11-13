@@ -9,12 +9,12 @@ import Router from './src/Router';
 class App extends Component {
     componentWillMount() {
         firebase.initializeApp({
-            apiKey: "AIzaSyARigkK20qHa42-zckidCtPbg2zhj2yuaY",
-            authDomain: "login-400a7.firebaseapp.com",
-            databaseURL: "https://login-400a7.firebaseio.com",
-            projectId: "login-400a7",
-            storageBucket: "login-400a7.appspot.com",
-            messagingSenderId: "645803024503"
+          apiKey: "AIzaSyBrcHRHnLzlFh788rto5N2U_anpJA9SvRU",
+          authDomain: "fire-teste-f4ddb.firebaseapp.com",
+          databaseURL: "https://fire-teste-f4ddb.firebaseio.com",
+          projectId: "fire-teste-f4ddb",
+          storageBucket: "fire-teste-f4ddb.appspot.com",
+          messagingSenderId: "265933217720"
         });
     }
     render() {
